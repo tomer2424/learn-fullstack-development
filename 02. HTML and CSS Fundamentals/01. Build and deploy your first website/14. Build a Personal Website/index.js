@@ -2,16 +2,16 @@
 // Replace the parameters below according to your preference.
 
 // space, scary, military, romantic, cowboy, fantasy, superhero
-favouriteMovieGenre("regular")
+favouriteMovieGenre("space")
 
 // watermelon, tomato, banana, orange, avocado, blueberry
-favouriteFruit("regular")
+favouriteFruit("blueberry")
 
 // light, dark
-favouriteMode("light")
+favouriteMode("dark")
 
 // sharp, soft, round
-favouriteEdgeStyle("sharp")
+favouriteEdgeStyle("soft")
 
 
 
@@ -29,7 +29,7 @@ function favouriteEdgeStyle(style) {
 
 function favouriteMovieGenre(font) {
     if (font) {
-        setProp("--font", "var(--" + font + ")");    
+        setProp("--font", "var(--" + font + ")");
     }
 }
 
@@ -59,7 +59,7 @@ function favouriteFruit(theme) {
     } else if (theme === "forrest") {
         setProp('--light', "#91B247")
         setProp('--dark', "#597C2B")
-    }  else if (theme === "shiny") {
+    } else if (theme === "shiny") {
         setProp('--light', "#2e9afe")
         setProp('--dark', "#02197c")
     } else if (theme === "banana") {
@@ -80,10 +80,10 @@ function favouriteFruit(theme) {
     } else if (theme === "blueberry") {
         setProp('--light', "#41a8f9")
         setProp('--dark', "#064490")
-    } else  {
+    } else {
         setProp('--light', "#f5f5f5")
         setProp('--dark', "#222222")
-    } 
+    }
 }
 
 
